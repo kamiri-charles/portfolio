@@ -25,11 +25,12 @@ const TypedSkills = () => {
         'Java (Spring Boot) Developer.',
         'Content Creator.',
         'Freelancer.',
-        'Consultant.'
+        'Consultant.',
+        'Database Administrator.'
 
       ],
-      typeSpeed: 60,
-      backSpeed: 60,
+      typeSpeed: 50,
+      backSpeed: 30,
       shuffle: true,
       loop: true,
       backDelay: 3000

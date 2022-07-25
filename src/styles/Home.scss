@@ -50,11 +50,11 @@
         flex-direction: column;
         flex-wrap: nowrap;
         margin: 100px 0 0 -100px;
-        object-fit: contain;
         
         img {
-            width: 250px;
-            height: 300px;
+            object-fit: cover;
+            width: 30%;
+            aspect-ratio: 1;
             border-radius: 50%;
         }
         .type-wrap {
@@ -65,7 +65,12 @@
                 color: blueviolet;
                 font-size: 20px;
                 font-weight: 600;
-                
+            }
+
+            .typed-cursor {
+                color: blueviolet;
+                font-size: 20px;
+                font-weight: 600;
             }
         }
 
