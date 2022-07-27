@@ -1,6 +1,7 @@
 import { faTimesCircle } from '@fortawesome/free-regular-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import '../styles/Navbar.scss';
 
 let menu_icon = faBars;
@@ -23,25 +24,51 @@ const Navbar = () => {
                 <FontAwesomeIcon icon={ menu_icon } />
             </div>
             <div className="navbar-left">
-                <div className="name">
-                    Charles Kamiri
-                </div>
+                <Link to="/">
+                    <div className="name">
+                        Charles Kamiri
+                    </div>
+                </Link>
             </div>
 
             <div className="navbar-right">
-                <div className="link">Skills</div>
-                <div className="link">Projects</div>
-                <div className="link">Certification</div>
-                <div className="link">Contact</div>
+                <Link to='skills'>
+                    <div className="link">Skills</div>
+                </Link>
+
+                <Link to='projects'>
+                    <div className="link">Projects</div>
+                </Link>
+
+                <Link to='certification'>
+                    <div className="link">Certification</div>
+                </Link>
+
+                <Link to='contact'>
+                    <div className="link">Contact</div>
+                </Link>
+
             </div>
 
             {/* Mobile navbar */}
             <div id="mobile-nav">
-                <div className="link">Skills</div>
-                    <div className="link">Projects</div>
-                    <div className="link">Certification</div>
-                    <div className="link">Contact</div>
-                </div>
+                <Link to='skills'>
+                    <div className="link" onClick={open_menu}>Skills</div>
+                </Link>
+
+                <Link to='projects'>
+                    <div className="link" onClick={open_menu}>Projects</div>
+                </Link>
+
+                <Link to='certification'>
+                    <div className="link" onClick={open_menu}>Certification</div>
+                </Link>
+
+                <Link to='contact'>
+                    <div className="link" onClick={open_menu}>Contact</div>
+                </Link>
+
+            </div>
         </div>
     )
 }
