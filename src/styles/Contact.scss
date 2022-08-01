@@ -1,0 +1,210 @@
+#contact {    
+    .sub-title {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+        max-width: 400px;
+        font-size: 20px;
+        font-family: 'Edu VIC WA NT Beginner', cursive !important;
+        border-bottom: 1px solid white;
+        text-align: center;
+    }
+    .left {
+        width: 49.5%;
+        height: 70vh;
+        flex-direction: column;
+        margin: 100px 0 0 0;
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            .sub-sub-title {
+                font-size: 20px;
+                width: 30%;
+                max-width: 500px;
+                margin: 0 0 20px 0;
+                border-bottom: 1px solid blueviolet;
+                text-align: center;
+                color: blueviolet;
+            }
+            
+            label {
+                margin: 20px;
+                display: grid;
+                font-size: 15px;
+                
+                input {
+                    margin: -25px 0 0 -10px;
+                    padding-inline: 10px;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 15px;
+                    font-weight: 600;
+                    width: 300px;
+                    height: 30px;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid white;
+                    background: transparent;
+                    color: black;
+                    transition: all 0.3s ease;
+                    
+                    &:focus, &.active{
+                        margin: 10px 0 0 0;
+                        background: white;
+                        
+                    }
+                    
+                }
+            }
+
+            .to {
+                margin: -2;
+                color: blueviolet;
+                text-decoration:wavy;
+                cursor: pointer;
+                span {
+                    color: white;
+                }
+            }
+            
+            textarea {
+                border: none;
+                outline: none;
+                width: 300px;
+                height: 100px;
+                resize: none;
+                margin: 20px 0 0 0;
+                padding: 10px;
+                font-family: 'Ubuntu',sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+            }
+            
+            .send {
+                outline: none;
+                border: none;
+                width: 150px;
+                height: 50px;
+                margin: 15px 0 0 0; 
+                background: blueviolet;
+                color: white;
+                font-size: 18px;
+                border-radius: 3px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background: transparent;
+                    color: blueviolet;
+                    border: 1px solid blueviolet;
+                }
+                
+            }
+            
+            
+        }
+    }
+    
+    .border {
+        margin-top: 80px;
+        width: 2px;
+        height: 70vh;
+        background: white;
+    }
+    
+    .right {
+        width: 49.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        a {
+            text-decoration: none;
+            outline: none;
+            width: 70%;
+            height: 100px;
+            border-radius: 6px;
+            margin: 10px;
+            padding: 10px;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.3s ease;
+
+            .icon {
+                font-size: 50px;
+
+                svg path {
+                    color: white;
+                }
+            }
+
+            .link-text {
+                color: black;
+                font-size: 18px;
+                
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            &.github {
+                background: white;
+
+                .icon svg path {
+                    color: black;
+                }
+            }
+
+            &.linkedin{
+                background: lightblue;
+
+                .icon svg path {
+                    color: black;
+                }
+            }
+
+            &.whatsapp {
+                background: lightgreen;
+
+                .icon svg path {
+                    color: black;
+                }
+            }
+
+        }
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    #contact {
+        flex-wrap: wrap;
+        .left {
+            width: 100%;
+        }
+
+        .border {
+            height: 2px;
+            width: 80%;
+            background: white;
+            margin: -200px 0 0 0;
+        }
+
+        .right {
+            width: 100%;
+            margin: -60px 0 0 0;
+        }
+    }
+}

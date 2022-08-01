@@ -1,28 +1,34 @@
     setTimeout(() => {
         const canvas = document.getElementById('canvas');
         canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+        canvas.height = window.innerHeight + 60;
         
         const ctx = canvas.getContext('2d');
         
-        canvas.addEventListener('resize', () => {
+        document.addEventListener('resize', () => {
             canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+            canvas.height = window.innerHeight + 60;
         });
+
+        document.addEventListener('scroll', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight + 60;
+        })
         
         class Particle {
             constructor() {
                 this.x = Math.random() * canvas.width;
                 this.x2 = this.x;
                 this.y = Math.random() * canvas.height;
+                this.y2 = this.y;
                 this.size = Math.random() * 0.6;
-                this.speed = Math.random() * Math.cos(60);
+                this.speed = Math.random() * 10;
                 this.radians = 0;
             }
             update() {
-                this.radians += 0.01;
-                this.x += Math.random() * Math.sin(this.radians) * this.size * Math.cos(this.speed);
-                this.y -= this.speed;
+                this.radians += 0.05;
+                this.x = this.x2 + Math.cos(this.radians) * this.size * this.speed;
+                this.y += this.size * 2;
                 
                 if (this.x > canvas.width) {
                     this.x = 0;
@@ -47,7 +53,7 @@
             }
         }
         
-        let numberOfParticles = 200;
+        let numberOfParticles = 50;
         let particleArr = [];
         
         const init = (particles) => {

@@ -1,6 +1,7 @@
 import { faTimesCircle } from '@fortawesome/free-regular-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.scss';
 
@@ -18,6 +19,12 @@ const open_menu = () => {
 }
 
 const Navbar = () => {
+    useEffect(() => {
+        const nav = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            window.scrollY > 5 ? nav.classList.add('scrolled') : nav.classList.remove('scrolled');
+        })
+    })
     return (
         <div id="navbar">
             <div id="ham-menu" onClick={ open_menu }>

@@ -3,11 +3,11 @@
     
     
     .left-section {
-        width: 50%;
+        width: 60%;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        margin: 50px 0 0 10%;
+        margin: 0 0 0 4%;
         
         & > * {
             margin: 2%;
@@ -28,10 +28,10 @@
             
             p {
                 font-family: 'Edu NSW ACT Foundation', cursive;
-                font-size: 20px;
-                font-weight: 700;
+                font-size: 18px;
+                font-weight: 500;
                 padding: 20px;
-                color: blueviolet;
+                color: white;
             }
         }
     }
@@ -41,11 +41,11 @@
         align-items: center;
         justify-content: center;
         width: 40%;
-        height: 45vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        margin: 100px 0 0 -100px;
+        margin: -100px 0 0 0;
         
         img {
             object-fit: cover;
@@ -62,22 +62,22 @@
                 font-size: 20px;
                 font-weight: 600;
             }
-
+            
             .typed-cursor {
                 color: blueviolet;
                 font-size: 20px;
                 font-weight: 600;
             }
         }
-
+        
         .resume {
             position: absolute;
             outline: none;
             border: none;
             font-family: 'Edu VIC WA NT Beginner', cursive !important;
             font-size: 18px;
-            font-weight: 600;
-            width: 150px;
+            font-weight: 700;
+            width: 180px;
             height: 50px;
             margin-top: 400px;
             background: blueviolet;
@@ -94,5 +94,39 @@
             }
         }
         
+    }
+}
+
+@media (max-width: 758px) {
+    #home {
+        flex-wrap: wrap;
+        
+        .left-section {
+            position: absolute;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin: 800px 0 0 0;
+
+            .typed {
+                margin: 0 0 200px 0;
+            }
+            
+        }
+        
+        .right-section {
+            position: absolute;
+            width: 100%;
+            margin: 450px 0 0 0;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .resume {
+                margin: 1200px 0 0 0;
+            }
+        }
     }
 }

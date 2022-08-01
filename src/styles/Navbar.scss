@@ -2,7 +2,7 @@
     position: fixed;
     width: 80%;
     height: 120px;
-    background-color: transparent;
+    background: transparent;
     color: white;
     
     display: flex;
@@ -11,6 +11,11 @@
     margin-left: 10%;
     
     border-bottom: 2px solid white;
+    transition: all 0.3s ease;
+
+    &.scrolled {
+        background: black !important;
+    }
     
     #ham-menu {
         background: transparent;
