@@ -7,7 +7,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        margin: -100px 0 0 -200px;
+        margin: 20px 100px 0 -200px;
 
         .nav-item {
             display: flex;
@@ -25,6 +25,10 @@
                 color: white;
             }
 
+            &.active {
+                background: blueviolet;
+            }
+
             &:hover {
                 background: blueviolet;
             }
@@ -36,7 +40,24 @@
     }
 
     .works {
-        width: 600px;
-        height: 100vh;
+        width: 800px;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        div {
+            width: 200px;
+            height: 200px;
+            border-radius: 3px;
+            background: white;
+            margin: 20px;
+            animation-name: projects_anim;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
     }
 }
+

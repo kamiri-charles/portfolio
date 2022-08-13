@@ -1,4 +1,4 @@
-#home, #skills, #projects, #contact, #certification {
+#home, #projects, #contact, #certification {
   display: flex;
   width: 100%;
   position: absolute;
@@ -6,4 +6,18 @@
   margin-top: 120px;
   align-items: center;
   justify-content: center;
+}
+
+/* Animations */
+@keyframes projects_anim {
+  0% {
+    transform: scale(1.01);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.02);
+  }
+  
 }
