@@ -86,7 +86,10 @@ const Home = () => {
             <div className="right-section">
                 <img src={require("../assets/images/profile-picture.jpg")} alt="" />
                 <TypedSkills />
-                <button className='resume'>Download resume</button>
+
+                <a href={require('../assets/resume.docx')} download="Charles' Resume">
+                  <button className='resume'>Download resume</button>
+                </a>
                 
             </div>
         </div>

@@ -69,28 +69,29 @@
                 font-weight: 600;
             }
         }
-        
-        .resume {
-            position: absolute;
-            outline: none;
-            border: none;
-            font-family: 'Edu VIC WA NT Beginner', cursive !important;
-            font-size: 18px;
-            font-weight: 700;
-            width: 180px;
-            height: 50px;
-            margin-top: 400px;
-            background: blueviolet;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            
-            &:hover {
-                border: 1px solid blueviolet;
-                border-radius: 3px;
-                color: blueviolet;
+        a {
+            .resume {
+                position: absolute;
+                outline: none;
+                border: none;
+                font-family: 'Edu VIC WA NT Beginner', cursive !important;
+                font-size: 18px;
                 font-weight: 700;
-                background: transparent;
+                width: 180px;
+                height: 50px;
+                margin: 20px 0 0 -80px;
+                background: blueviolet;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                
+                &:hover {
+                    border: 1px solid blueviolet;
+                    border-radius: 3px;
+                    color: blueviolet;
+                    font-weight: 700;
+                    background: transparent;
+                }
             }
         }
         
