@@ -107,10 +107,14 @@
             width: 100%;
             align-items: center;
             justify-content: center;
-            margin: 800px 0 0 0;
+            margin: 850px 0 0 0;
 
             .typed {
                 margin: 0 0 200px 0;
+            }
+
+            .info {
+                margin: 100px 0 0 0;
             }
             
         }
@@ -118,15 +122,17 @@
         .right-section {
             position: absolute;
             width: 100%;
-            margin: 450px 0 0 0;
+            margin: 430px 0 0 0;
 
             img {
                 width: 100px;
                 height: 100px;
             }
 
-            .resume {
-                margin: 1200px 0 0 0;
+            a {
+                .resume {
+                    margin: 70px 0 0 -90px;
+                }
             }
         }
     }

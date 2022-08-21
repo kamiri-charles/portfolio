@@ -90,8 +90,11 @@
 /* Mobile */
 @media (max-width: 875px) {
     #navbar {
+        width: 100vw;
+        margin: 0 0 0 0;
+        border-bottom: 1px solid white;
         #ham-menu {
-            margin: 70px 0 0 10px;
+            margin: 70px -50px 0 50px;
             font-size: 20px;
             svg path {
                 color: #fff;
@@ -99,18 +102,18 @@
         }
         
         #mobile-nav {
+            position: fixed;
             display: flex;
             flex-direction: column;
-            margin: 120px 0 0 -120%;
+            margin: 120px 0 0 -130%;
             padding: 0;
-            position: fixed;
             width: 110%;
             height: calc(100% - 120px);
             background: blueviolet;
             transition: all 0.4s ease;
             
             &.active {
-                margin: 120px 0 0 -60px;
+                margin: 120px 0 0 -20px;
             }
             
             a {
@@ -128,7 +131,7 @@
                     text-decoration: none;
                     width: 25%;
                     margin-block: 40px;
-                    margin-inline: 35%;
+                    margin-inline: 37%;
                     color: white;
                     border-bottom: 1px solid white;
                     transition: all 0.2s ease-in-out;
