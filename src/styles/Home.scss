@@ -1,7 +1,4 @@
 #home {
-    
-    
-    
     .left-section {
         width: 60%;
         display: flex;
@@ -27,10 +24,10 @@
             margin-top: 40px;
             
             p {
-                font-family: 'Edu NSW ACT Foundation', cursive;
-                font-size: 18px;
+                //font-family: 'Edu NSW ACT Foundation', cursive;
+                font-size: 15px;
                 font-weight: 500;
-                padding: 20px;
+                padding: 10px;
                 color: white;
             }
         }
@@ -45,7 +42,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        margin: -100px 0 0 0;
+        margin: -100px 0 0 -10%;
         
         img {
             object-fit: cover;
@@ -103,35 +100,39 @@
         flex-wrap: wrap;
         
         .left-section {
-            position: absolute;
+            position: relative;
             width: 100%;
+            height: auto;
             align-items: center;
             justify-content: center;
-            margin: 850px 0 0 0;
-
-            .typed {
-                margin: 0 0 200px 0;
-            }
+            margin-top: 50px;
 
             .info {
-                margin: 100px 0 0 0;
+                margin: 38% 0 0 0;
             }
             
         }
         
         .right-section {
-            position: absolute;
+            position: fixed;
             width: 100%;
-            margin: 430px 0 0 0;
+            top: 2%;
+            left: 10%;
 
             img {
-                width: 100px;
-                height: 100px;
+                position: fixed;
+                width: 50px;
+                height: 50px;
+                top: 20%;
+                left: 80%;
+            }
+            .wrap {
+                margin-top: 40%;
             }
 
             a {
                 .resume {
-                    margin: 70px 0 0 -90px;
+                    top: 45%;
                 }
             }
         }

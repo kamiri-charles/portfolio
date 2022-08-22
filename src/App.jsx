@@ -19,12 +19,9 @@ const App = () => {
           <Route exact path='/projects' element={ <Projects /> } />
           <Route exact path='/certification' element={ <Certification /> } />
           <Route exact path='/contact' element={ <Contact /> } />
-
         </Routes>
         <Navbar />
-        
       </Router>
-
     </>
   );
 }

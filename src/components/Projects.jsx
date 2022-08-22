@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import { faPython, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faAngleLeft,  faGamepad, faInfinity } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft,  faAngleRight,  faGamepad, faInfinity } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/Projects.scss';
 import { useEffect } from 'react';
@@ -14,7 +14,13 @@ const Projects = () => {
 
     /* Open and close projects menu function for smaller devices */
     const projects_nav_control = () => {
-        !projects_nav.classList.contains('inactive') ? projects_nav.classList.add('inactive') : projects_nav.classList.remove('inactive');        
+        // Menu
+        !projects_nav.classList.contains('inactive') ? projects_nav.classList.add('inactive') : projects_nav.classList.remove('inactive');
+
+        !projects_nav.classList.contains('inactive') ? works.classList.remove('projects-nav-inactive') : works.classList.add('projects-nav-inactive'); 
+        
+        // Button 
+        !projects_nav.classList.contains('inactive') ? nav_control_btn.classList.remove('projects-active') : nav_control_btn.classList.add('projects-active');    
     }
 
     useEffect(() => {
@@ -57,8 +63,8 @@ const Projects = () => {
 
     return (
         <div id="projects">
-            <div className="projects-nav-control-btn" onClick={ projects_nav_control }>
-                <FontAwesomeIcon icon={ faAngleLeft } />
+            <div className="projects-nav-control-btn" id='nav_control_btn' onClick={ projects_nav_control }>
+                <FontAwesomeIcon icon={ faAngleRight } />
             </div>
 
             <div className="projects-nav" id='projects_nav'>
