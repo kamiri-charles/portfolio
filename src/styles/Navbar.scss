@@ -24,7 +24,7 @@
         }
     }
     
-    #mobile-nav {
+    #menu {
         display: none;
     }
     
@@ -101,7 +101,7 @@
             }
         }
         
-        #mobile-nav {
+        #menu {
             position: fixed;
             display: flex;
             flex-direction: column;
@@ -114,6 +114,7 @@
             
             &.active {
                 margin: 120px 0 0 -20px;
+                padding-top: 50px;
             }
             
             a {
@@ -129,8 +130,8 @@
                     font-size: 20px;
                     font-weight: 600;
                     text-decoration: none;
-                    width: 25%;
-                    margin-block: 40px;
+                    width: 120px;
+                    margin-block: 35px;
                     margin-inline: 37%;
                     color: white;
                     border-bottom: 1px solid white;

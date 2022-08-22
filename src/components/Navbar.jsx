@@ -1,28 +1,24 @@
-import { faTimesCircle } from '@fortawesome/free-regular-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+/* eslint-disable no-undef */
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.scss';
 
 let menu_icon = faBars;
-
 const open_menu = () => {
-    const menu = document.getElementById('mobile-nav');
-    
     if (menu.classList.contains('active')) {
         menu.classList.remove('active');
     } else {
         menu.classList.add('active');
-        menu_icon = faTimesCircle;
+        menu_icon = faTimes;
     }
 }
 
 const Navbar = () => {
     useEffect(() => {
-        const nav = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
-            window.scrollY > 5 ? nav.classList.add('scrolled') : nav.classList.remove('scrolled');
+            window.scrollY > 5 ? navbar.classList.add('scrolled') : navbar.classList.remove('scrolled');
         })
     })
     return (
@@ -57,7 +53,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile navbar */}
-            <div id="mobile-nav">
+            <div id="menu">
                 <Link to='projects'>
                     <div className="link" onClick={open_menu}>Projects</div>
                 </Link>

@@ -1,7 +1,8 @@
+import '../styles/Certification.scss';
 const Certification = () => {
     return (
         <div id="certification">
-            Hello Certifications!
+            Work in progress!
         </div>
     )
 }

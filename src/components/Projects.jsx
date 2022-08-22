@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faAngleLeft,  faGamepad, faInfinity } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,36 +14,30 @@ const Projects = () => {
 
     /* Open and close projects menu function for smaller devices */
     const projects_nav_control = () => {
-        const projects_nav = document.getElementById('projects-nav');
-
-
-        !projects_nav.classList.contains('inactive') ? projects_nav.classList.add('inactive') : projects_nav.classList.remove('inactive');
-
-        
+        !projects_nav.classList.contains('inactive') ? projects_nav.classList.add('inactive') : projects_nav.classList.remove('inactive');        
     }
 
     useEffect(() => {
-        const works_container = document.getElementById('works-container');
         const projects_arr = [
             {
                 'name': 'react',
                 'el': document.getElementById('1'),
-                'total_projects': 10
+                'total_projects': 6
             },
             {
-                'name': 'python',
+                'name': 'django',
                 'el': document.getElementById('2'),
-                'total_projects': 1
+                'total_projects': 4
             },
             {
                 'name': 'game-dev',
                 'el': document.getElementById('3'),
-                'total_projects': 1
+                'total_projects': 5
             },
             {
                 'name': 'misc',
                 'el': document.getElementById('4'),
-                'total_projects': 1
+                'total_projects': 3
             }
         ];
         load_projects(works_container, projects_arr[0].total_projects);
@@ -62,13 +57,11 @@ const Projects = () => {
 
     return (
         <div id="projects">
-
-            <div className="projects-nav-control-btn" id='projects-nav-control-btn' onClick={ projects_nav_control }>
+            <div className="projects-nav-control-btn" onClick={ projects_nav_control }>
                 <FontAwesomeIcon icon={ faAngleLeft } />
             </div>
 
-            <div className="projects-nav" id='projects-nav'>
-
+            <div className="projects-nav" id='projects_nav'>
 
                 {/* ReactJs */}
                 <div className="nav-item active" id='1'>
@@ -97,7 +90,7 @@ const Projects = () => {
 
 
             <div className="works" id='works'>
-                <div className="works-container" id='works-container'>
+                <div className="works-container" id='works_container'>
 
                 </div>
             </div>

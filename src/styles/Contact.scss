@@ -128,7 +128,7 @@
             text-decoration: none;
             outline: none;
             width: 70%;
-            height: 120px;
+            height: 100px;
             border-radius: 6px;
             margin: 10px;
             padding: 10px;
@@ -150,7 +150,7 @@
 
             .link-text {
                 color: black;
-                font-size: 18px;
+                font-size: 16px;
                 
             }
 
@@ -167,7 +167,7 @@
             }
 
             &.linkedin{
-                background: lightblue;
+                background: rgb(7, 124, 163);
 
                 .icon svg path {
                     color: black;
@@ -175,7 +175,7 @@
             }
 
             &.whatsapp {
-                background: lightgreen;
+                background: rgb(9, 223, 9);
 
                 .icon svg path {
                     color: black;

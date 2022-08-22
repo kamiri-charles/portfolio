@@ -1,15 +1,12 @@
+/* eslint-disable no-undef */
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/Contact.scss';
 
 const Contact = () => {
 
     useEffect(() => {
-        const input_1 = document.getElementById('input-1');
-        const input_2 = document.getElementById('input-2');
-
         input_1.addEventListener('focusout', () => {
             input_1.value !== '' ? input_1.classList.add('active') : input_1.classList.remove('active'); 
         })
@@ -28,12 +25,12 @@ const Contact = () => {
                     <div className="sub-sub-title">Send me an email.</div>
                     <label>
                         Subject
-                        <input type="text" id='input-1' required />
+                        <input type="text" id='input_1' required />
                     </label>
 
                     <label>
                         Email
-                        <input type="text" id='input-2' required />
+                        <input type="text" id='input_2' required />
                     </label>
 
                     <div className="to">
@@ -48,38 +45,30 @@ const Contact = () => {
 
 
             <div className="right">
-
                 {/* Github */}
-                <Link to='https://github.com/kamiri-charles' className='github' target='_blank'>
+                <a href="https://github.com/kamiri-charles" className='github' target='_blank' rel='noreferrer'>
                     <div className="icon">
                         <FontAwesomeIcon icon={ faGithub } />
                     </div>
-                    <div className="link-text">Contribute to some of my projects on GitHub</div>
-                </Link>
+                    <div className="link-text">Contribute to some of my projects on GitHub <br /> @kamiri-charles</div>
+                </a>
 
                 {/* Linkedin */}
-                <Link to='https://linkedin.com/charles-kamiri' className='linkedin' target='_blank'>
+                <a href="https://linkedin.com/charles-kamiri" className='linkedin' target='_blank' rel='noreferrer'>
                     <div className="icon">
                         <FontAwesomeIcon icon={ faLinkedin } />
                     </div>
-                    <div className="link-text">I'm also available on LinkedIn!</div>
-                </Link>
+                    <div className="link-text">I'm also available on LinkedIn! <br /> @Charles-Kamiri</div>
+                </a>
 
                 {/* Whatsapp */}
-                <Link to='https://linkedin.com/charles-kamiri' className='whatsapp' target='_blank'>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a href="" className='whatsapp' target='_blank' rel='noreferrer'>
                     <div className="icon">
                         <FontAwesomeIcon icon={ faWhatsapp } />
                     </div>
                     <div className="link-text">+254 797-317-704 <br />Send a quick text, maybe even a call... and let's connect</div>
-                </Link>
-
-                {/* Instagram */}
-                {/* <Link to='https://instagram.com/kamiri.charles'>
-                    <div className="icon">
-                        <FontAwesomeIcon icon={ faInstagram } />
-                    </div>
-                    <div className="link-text">@kamiri.charles <br />Give me a follow!</div>
-                </Link> */}
+                </a>
             </div>
         </div>
     )
