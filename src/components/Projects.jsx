@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 import { faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faAngleLeft,  faAngleRight,  faGamepad, faInfinity } from '@fortawesome/free-solid-svg-icons';
@@ -10,17 +11,15 @@ import load_projects from '../assets/scripts/projects';
 
 
 const Projects = () => {
-
-
     /* Open and close projects menu function for smaller devices */
     const projects_nav_control = () => {
+        let nav_control_btn = document.getElementById('nav_control_btn');
         // Menu
         !projects_nav.classList.contains('inactive') ? projects_nav.classList.add('inactive') : projects_nav.classList.remove('inactive');
-
         !projects_nav.classList.contains('inactive') ? works.classList.remove('projects-nav-inactive') : works.classList.add('projects-nav-inactive'); 
         
         // Button 
-        !projects_nav.classList.contains('inactive') ? nav_control_btn.classList.remove('projects-active') : nav_control_btn.classList.add('projects-active');    
+        !projects_nav.classList.contains('inactive') ? nav_control_btn.classList.remove('projects-active') : nav_control_btn.classList.add('projects-active');
     }
 
     useEffect(() => {
@@ -63,11 +62,11 @@ const Projects = () => {
 
     return (
         <div id="projects">
-            <div className="projects-nav-control-btn" id='nav_control_btn' onClick={ projects_nav_control }>
+            <div className="projects-nav-control-btn projects-active" id='nav_control_btn' onClick={ projects_nav_control }>
                 <FontAwesomeIcon icon={ faAngleRight } />
             </div>
 
-            <div className="projects-nav" id='projects_nav'>
+            <div className="projects-nav inactive" id='projects_nav'>
 
                 {/* ReactJs */}
                 <div className="nav-item active" id='1'>
@@ -95,7 +94,7 @@ const Projects = () => {
             </div>
 
 
-            <div className="works" id='works'>
+            <div className="works projects-nav-inactive" id='works'>
                 <div className="works-container" id='works_container'>
 
                 </div>

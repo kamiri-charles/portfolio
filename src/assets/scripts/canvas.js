@@ -14,7 +14,7 @@ setTimeout(() => {
         constructor() {
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;
-            this.size = Math.random() * 0.6;
+            this.size = Math.random() * 0.9;
             this.speed = Math.random() * 3 - 1.5;
             this.radians = 0;
             this.radian_increment = Math.random() * 0.3 - 0.15;

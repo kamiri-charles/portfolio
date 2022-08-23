@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faInstagram, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect } from 'react';
 import '../styles/Contact.scss';
@@ -59,6 +59,14 @@ const Contact = () => {
                         <FontAwesomeIcon icon={ faLinkedin } />
                     </div>
                     <div className="link-text">I'm also available on LinkedIn! <br /> @Charles-Kamiri</div>
+                </a>
+
+                {/* Instagram */}
+                <a href="https://instagram.com/kamiri.charles" className='instagram' target='_blank' rel='noreferrer'>
+                    <div className="icon">
+                        <FontAwesomeIcon icon={ faInstagram } />
+                    </div>
+                    <div className="link-text">Instagram <br /> @kamiri.charles</div>
                 </a>
 
                 {/* Whatsapp */}
