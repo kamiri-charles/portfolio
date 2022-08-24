@@ -5,9 +5,8 @@ import { faAngleLeft,  faAngleRight,  faGamepad, faInfinity } from '@fortawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/Projects.scss';
 import { useEffect } from 'react';
-import load_projects from '../assets/scripts/projects';
-
-
+import load_projects from '../assets/scripts/projects_script';
+import '../assets/scripts/projects_script';
 
 
 const Projects = () => {
@@ -46,6 +45,7 @@ const Projects = () => {
             }
         ];
         load_projects(works_container, projects_arr[0].total_projects);
+        let current_project_name = projects_arr[0].name;
 
         projects_arr.forEach(obj => {
             obj.el.addEventListener('click', () => {
@@ -96,7 +96,7 @@ const Projects = () => {
 
             <div className="works projects-nav-inactive" id='works'>
                 <div className="works-container" id='works_container'>
-
+                    <canvas id="load-canvas"></canvas>
                 </div>
             </div>
         </div>
