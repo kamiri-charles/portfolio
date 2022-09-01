@@ -1,11 +1,11 @@
 /* eslint-disable no-undef */
+/* eslint-disable default-case */
 import { faGithub, faInstagram, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect } from 'react';
 import '../styles/Contact.scss';
 
 const Contact = () => {
-
     useEffect(() => {
         input_1.addEventListener('focusout', () => {
             input_1.value !== '' ? input_1.classList.add('active') : input_1.classList.remove('active'); 
@@ -14,8 +14,9 @@ const Contact = () => {
         input_2.addEventListener('focusout', () => {
             input_2.value !== '' ? input_2.classList.add('active') : input_1.classList.remove('active'); 
         })
-    });
 
+
+    });
 
     return (
         <div id="contact">

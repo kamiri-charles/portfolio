@@ -4,7 +4,7 @@ const load_projects = (el, num) => {
         for (let i = 0; i < num; i++) {
             el.innerHTML += '<div></div>\n';
         };
-    }, 2000);
+    }, 5000);
     el.innerHTML = '<canvas id="load-canvas"></canvas>';
 };
 export default load_projects;

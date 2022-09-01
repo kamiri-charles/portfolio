@@ -6,29 +6,22 @@
         flex-wrap: nowrap;
         margin: 0 0 0 4%;
         
-        & > * {
-            margin: 2%;
-        }
-        
         .typed {
             display: flex;
-            font-size: 30px;
-            color: blueviolet;
-            margin-top: -8px;
+            font-size: 25px;
+            color: blue;
         }
         
         .info {
-            border-top: 2px solid blueviolet;
+            border-top: 2px solid black;
             width: 80%;
             height: auto;
             margin-top: 40px;
             
             p {
-                //font-family: 'Edu NSW ACT Foundation', cursive;
-                font-size: 15px;
-                font-weight: 500;
+                font-family: 'Edu NSW ACT Foundation', cursive;
+                font-size: 18px;
                 padding: 10px;
-                color: white;
             }
         }
     }
@@ -54,14 +47,14 @@
             margin: 20px;
             
             .typed-span {
+                font-family: 'Edu NSW ACT Foundation', cursive;
                 white-space: pre;
-                color: blueviolet;
                 font-size: 20px;
                 font-weight: 600;
             }
             
             .typed-cursor {
-                color: blueviolet;
+                font-family: 'Edu NSW ACT Foundation', cursive;
                 font-size: 20px;
                 font-weight: 600;
             }
@@ -74,18 +67,19 @@
                 font-family: 'Edu VIC WA NT Beginner', cursive !important;
                 font-size: 18px;
                 font-weight: 700;
-                width: 180px;
+                width: 160px;
                 height: 50px;
                 margin: 20px 0 0 -80px;
-                background: blueviolet;
+                background: blue;
                 border-radius: 6px;
+                color: white;
                 cursor: pointer;
                 transition: all 0.3s ease;
                 
                 &:hover {
-                    border: 1px solid blueviolet;
+                    border: 1px solid blue;
                     border-radius: 3px;
-                    color: blueviolet;
+                    color: blue;
                     font-weight: 700;
                     background: transparent;
                 }
@@ -100,39 +94,36 @@
         flex-wrap: wrap;
         
         .left-section {
-            position: relative;
-            width: 100%;
-            height: auto;
+            position: fixed;
+            top: 5%;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
             align-items: center;
             justify-content: center;
-            margin-top: 50px;
 
             .info {
-                margin: 38% 0 0 0;
+                margin: 55% 0 0 0;
             }
             
         }
         
         .right-section {
             position: fixed;
-            width: 100%;
-            top: 2%;
-            left: 10%;
+            top: -3%;
+            left: 14%;
+            width: 100vw;
+            height: 100vh;
+
 
             img {
-                position: fixed;
-                width: 50px;
-                height: 50px;
-                top: 20%;
-                left: 80%;
-            }
-            .wrap {
-                margin-top: 40%;
+                width: 80px;
+                height: 80px;
             }
 
             a {
                 .resume {
-                    top: 45%;
+                    top: 55%;
                 }
             }
         }

@@ -67,9 +67,6 @@ const Home = () => {
             <div className="left-section">
                 <div className='gr'>Hello there, I'm </div>
                 <div className="typed"></div>
-                <div className='desc'>
-                    A fullstack developer from Kenya.
-                </div>
 
                 {/* More info about myself */}
                 <div className="info">

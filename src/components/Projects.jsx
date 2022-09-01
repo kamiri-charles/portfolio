@@ -26,7 +26,7 @@ const Projects = () => {
             {
                 'name': 'react',
                 'el': document.getElementById('1'),
-                'total_projects': 6
+                'total_projects': 4
             },
             {
                 'name': 'django',

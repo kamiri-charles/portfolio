@@ -6,7 +6,7 @@
         justify-content: center;
         width: 50px;
         height: 50px;
-        background: blueviolet;
+        background: black;
         top: 40%;
         left: 20%;
         transform: translateY(-50%);
@@ -22,17 +22,15 @@
         
         &.projects-active {
             left: -5%;
-            background: transparent;
-            border: 4px solid blueviolet;
             transform: rotate(0deg);
-
+            
         }
     }
     
     .projects-nav {
         width: 100px;
         height: 70vh;
-        border-right: 1px solid white;
+        border-right: 2px solid black;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -49,19 +47,32 @@
             height: 100px;
             font-size: 40px;
             text-align: center;
-            border-radius: 9px;
+            border-radius: 6px;
             cursor: pointer;
             transition: all 0.3s ease;
+            color: black;
+
             svg path {
-                color: white;
+                color: black;
             }
             
             &.active {
-                background: blueviolet;
+                background: black;
+                color: white;
+
+                svg path {
+                    color: white;
+                }
             }
             
             &:hover {
-                background: blueviolet;
+                background: black;
+                color: white;
+
+                svg path {
+                    color: white;
+                }
+                
             }
         }
         
@@ -73,28 +84,27 @@
     .works {
         width: 60%;
         height: 80vh;
-
+        
         .works-container {
             display: flex;
             flex-wrap: wrap;
             margin: 60px 0 0 10px;
             width: 100%;
-
+            
             #load-canvas {
                 position: absolute;
                 top: 40%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                //width: 300px;
                 background: transparent;
             }
-
-
+            
+            
             div {
                 width: 80px;
                 height: 80px;
                 border-radius: 3px;
-                background: white;
+                background: black;
                 margin: 20px;
             }
         }
@@ -103,15 +113,14 @@
 }
 
 /* Mobile */
-
 @media (max-width: 768px) {
     #projects {
         .projects-nav-control-btn {
             opacity: 1;
         }
         .projects-nav {
-            margin: 0;
-
+            margin-left: 20px;
+            
             &.inactive {
                 margin: 0 200px 0 -300px;
             }
@@ -121,18 +130,18 @@
             min-width: 200px;
             max-width: 100vw;
             transition: all 0.3s ease;
-
+            
             .works-container #load-canvas {
                 position: relative;
-                margin-top: 200px;
-                margin-left: -20px;
+                margin-top: 150px;
+                margin-left: -100px;
             }
-
+            
             &.projects-nav-inactive {
                 margin-left: 40px;
             }
         }
-
+        
     }
 }
 

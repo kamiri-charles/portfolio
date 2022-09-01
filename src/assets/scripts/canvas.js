@@ -16,11 +16,11 @@ setTimeout(() => {
         constructor() {
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;
-            this.size = Math.random() * 0.9;
-            this.speed = Math.random() * 3 - 1.5;
+            this.size = Math.random() * 5;
+            this.speed = Math.random() * 5 - 2;
             this.radians = 0;
             this.radian_increment = Math.random() * 0.3 - 0.15;
-            this.curve = Math.random() * 3 - 1.5;
+            this.curve = Math.random() * 5 - 2;
         }
         update() {
             this.radians += this.radian_increment;
@@ -37,9 +37,9 @@ setTimeout(() => {
         }
         draw() {
             ctx.beginPath();
-            ctx.fillStyle = 'white';
+            ctx.strokeStyle = 'blue';
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, true);
-            ctx.fill();
+            ctx.stroke();
             ctx.closePath();
         }
     }
@@ -57,7 +57,7 @@ setTimeout(() => {
     const animate = () => {
         ctx.beginPath()
         //ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
-        ctx.fillStyle = '#000';
+        ctx.fillStyle = '#fff';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         for (let i = 0; i < particleArr.length; i++) {
             particleArr[i].draw();
@@ -82,7 +82,7 @@ setTimeout(() => {
                     this.x = 50;
                     this.y = 50;
                     this.radius = 4;
-                    this.color = 'blueviolet';
+                    this.color = 'black';
                     this.radians = 0;
                 }
                 
@@ -102,7 +102,7 @@ setTimeout(() => {
             
             const load_particle = new LoadParticle();
             const load_animate = () => {
-                load_ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+                load_ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
                 load_ctx.fillRect(0, 0, load_canvas.width, load_canvas.height);
                 load_particle.update();
                 load_particle.draw();
