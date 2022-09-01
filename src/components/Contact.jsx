@@ -22,7 +22,7 @@ const Contact = () => {
         <div id="contact">
             <div className="sub-title">Get in touch</div>
             <div className="left">
-                <form action="https://formsubmit.co/charleskamiri6@gmail.com" method='POST'>
+                <form action="https://formsubmit.co/5468185aaec8dc6707c6f8bc9216c88c" method='POST'>
                     <div className="sub-sub-title">Send me an email.</div>
                     <label>
                         Subject

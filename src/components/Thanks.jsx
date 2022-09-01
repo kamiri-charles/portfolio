@@ -12,7 +12,7 @@ const Thanks = () => {
                 <br />
                 <br />
                 <br />
-                <a href="kamiri-charles.github.io/portfolio/">
+                <a href="https://kamiri-charles.github.io/portfolio/">
                     <FontAwesomeIcon icon={ faHouse } />
                 </a>
             </div>
