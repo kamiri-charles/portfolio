@@ -1,0 +1,36 @@
+#thanks {
+    height: 100vh;
+}
+#thanks .message {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    justify-content: space-around;
+    a {
+        outline: none;
+        text-decoration: none;
+        font-size: 30px;
+        cursor: pointer;
+        border: 1px solid blue;
+        padding: 5px;
+        border-radius: 50%;
+        transition: all 0.5s ease;
+
+        svg path {
+            color: blue;
+        }
+
+        &:hover {
+            background: blue;
+            padding: 20px;
+            svg path {
+                color: white;
+            }
+        }
+    }
+}

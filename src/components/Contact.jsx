@@ -22,18 +22,19 @@ const Contact = () => {
         <div id="contact">
             <div className="sub-title">Get in touch</div>
             <div className="left">
-                <form action="">
+                <form action="https://formsubmit.co/charleskamiri6@gmail.com" method='POST'>
                     <div className="sub-sub-title">Send me an email.</div>
                     <label>
                         Subject
-                        <input type="text" id='input_1' required />
+                        <input type="text" id='input_1' name='Subject' required />
                     </label>
 
                     <label>
                         Email
-                        <input type="text" id='input_2' required />
+                        <input type="email" id='input_2' name='Email' required />
                     </label>
-
+                    <input type="hidden" name="_captcha" value="false"></input>
+                    <input type="hidden" name="_next" value="https://kamiri-charles.github.io/portfolio/email-submission-success"></input>
                     <div className="to">
                         <span>To: </span>
                         charleskamiri6@gmail.com

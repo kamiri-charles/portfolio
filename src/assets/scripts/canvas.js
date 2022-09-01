@@ -16,7 +16,7 @@ setTimeout(() => {
         constructor() {
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;
-            this.size = Math.random() * 5;
+            this.size = Math.random() * 20;
             this.speed = Math.random() * 5 - 2;
             this.radians = 0;
             this.radian_increment = Math.random() * 0.3 - 0.15;
@@ -28,11 +28,33 @@ setTimeout(() => {
             this.y += Math.sin(this.radians) * this.curve;
             
             // Boundaries
-            if (this.x > canvas.width) this.x = 0;
-            if (this.x < 0) this.x = canvas.width;
+            if (this.x > canvas.width) {
+                this.x = 0;
+                this.speed = Math.random() * 5 - 2;
+                this.radian_increment = Math.random() * 0.3 - 0.15;
+                this.curve = Math.random() * 5 - 2;
+            };
+            if (this.x < 0) {
+                this.x = canvas.width;
+                this.speed = Math.random() * 5 - 2;
+                this.radians = 0;
+                this.radian_increment = Math.random() * 0.3 - 0.15;
+                this.curve = Math.random() * 5 - 2;
+            };
             
-            if (this.y > canvas.height) this.y = 0;
-            if (this.y < 0) this.y = canvas.height;
+            if (this.y > canvas.height) {
+                this.y = 0;
+                this.speed = Math.random() * 5 - 2;
+                this.radian_increment = Math.random() * 0.3 - 0.15;
+                this.curve = Math.random() * 5 - 2;
+            };
+            if (this.y < 0) {
+                this.y = canvas.height
+                this.speed = Math.random() * 5 - 2;
+                this.radians = 0;
+                this.radian_increment = Math.random() * 0.3 - 0.15;
+                this.curve = Math.random() * 5 - 2;
+            };
             
         }
         draw() {
@@ -44,7 +66,7 @@ setTimeout(() => {
         }
     }
     
-    let numberOfParticles = 10;
+    let numberOfParticles = 20;
     let particleArr = [];
     
     const init = (particles) => {
@@ -56,8 +78,7 @@ setTimeout(() => {
     
     const animate = () => {
         ctx.beginPath()
-        //ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
-        ctx.fillStyle = '#fff';
+        ctx.fillStyle = 'rgba(250, 250, 250, 0.7)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         for (let i = 0; i < particleArr.length; i++) {
             particleArr[i].draw();
