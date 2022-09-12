@@ -6,11 +6,14 @@
     display: flex;
     flex-wrap: nowrap;
     margin-left: 10%;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     transition: all 0.3s ease;
-
+    
     &.scrolled {
-        background: white !important;
+        background: #7F00FF;
+        background: -webkit-linear-gradient(to left, #E100FF, #7F00FF);
+        background: linear-gradient(to left, #E100FF, #7F00FF);
+        
     }
     
     #ham-menu {
@@ -34,7 +37,7 @@
         a {
             text-decoration: none;
             outline: none;
-            color: black;
+            color: white;
             
             .name {
                 text-align: center;
@@ -71,7 +74,7 @@
                 font-weight: 600;
                 text-decoration: none;
                 transition: all 0.2s ease-in-out;
-                color: black;
+                color: white;
                 cursor: pointer;
                 
                 &:hover {
@@ -91,7 +94,7 @@
             margin: 70px -50px 0 50px;
             font-size: 20px;
             svg path {
-                color: #000;
+                color: #fff;
             }
         }
         
@@ -103,9 +106,7 @@
             padding: 0;
             width: 110%;
             height: calc(100% - 120px);
-            background: #005C97;
-            background: -webkit-linear-gradient(to bottom, #363795, #005C97);
-            background: linear-gradient(to bottom, #363795, #005C97);
+            background: #1d2327;
             transition: all 0.4s ease;
             
             &.active {

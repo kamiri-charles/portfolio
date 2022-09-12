@@ -56,7 +56,7 @@ const Contact = () => {
                 </a>
 
                 {/* Linkedin */}
-                <a href="https://linkedin.com/charles-kamiri" className='linkedin' target='_blank' rel='noreferrer'>
+                <a href="https://www.linkedin.com/in/charles-kamiri-5012a9209/" className='linkedin' target='_blank' rel='noreferrer'>
                     <div className="icon">
                         <FontAwesomeIcon icon={ faLinkedin } />
                     </div>

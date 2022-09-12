@@ -75,14 +75,18 @@ setTimeout(() => {
         }
     };
     init(numberOfParticles);
+
+    const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+    gradient.addColorStop(0, '#7F00FF');
+    gradient.addColorStop(1, '#E100FF');
     
     const animate = () => {
         ctx.beginPath()
-        ctx.fillStyle = 'rgba(250, 250, 250, 0.7)';
+        ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         for (let i = 0; i < particleArr.length; i++) {
-            particleArr[i].draw();
-            particleArr[i].update();
+            //particleArr[i].draw();
+            //particleArr[i].update();
         }
         requestAnimationFrame(animate);
     };
@@ -100,10 +104,10 @@ setTimeout(() => {
             const load_ctx = load_canvas.getContext('2d');
             class LoadParticle {
                 constructor() {
-                    this.x = 50;
-                    this.y = 50;
-                    this.radius = 4;
-                    this.color = 'black';
+                    this.x = load_canvas.width / 2 - 20;
+                    this.y = load_canvas.height / 2 - 10;
+                    this.radius = 5;
+                    this.color = 'white';
                     this.radians = 0;
                 }
                 
@@ -123,7 +127,9 @@ setTimeout(() => {
             
             const load_particle = new LoadParticle();
             const load_animate = () => {
-                load_ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+                load_ctx.beginPath();
+                load_ctx.globalAlpha = 0.6;
+                load_ctx.fillStyle = 'black';
                 load_ctx.fillRect(0, 0, load_canvas.width, load_canvas.height);
                 load_particle.update();
                 load_particle.draw();
