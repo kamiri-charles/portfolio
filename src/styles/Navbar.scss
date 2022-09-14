@@ -10,10 +10,7 @@
     transition: all 0.3s ease;
     
     &.scrolled {
-        background: #7F00FF;
-        background: -webkit-linear-gradient(to left, #E100FF, #7F00FF);
-        background: linear-gradient(to left, #E100FF, #7F00FF);
-        
+        background: #7F00FF;        
     }
     
     #ham-menu {

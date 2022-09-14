@@ -136,17 +136,10 @@
             max-width: 100vw;
             transition: all 0.3s ease;
             
-            .works-container #load-canvas {
-                position: relative;
-                margin-top: 150px;
-                margin-left: -100px;
-            }
-            
             &.projects-nav-inactive {
                 margin-left: 40px;
             }
         }
-        
     }
 }
 

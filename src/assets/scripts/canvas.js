@@ -14,64 +14,57 @@ setTimeout(() => {
     
     class Particle {
         constructor() {
-            this.x = Math.random() * canvas.width;
-            this.y = Math.random() * canvas.height;
-            this.size = Math.random() * 20;
-            this.speed = Math.random() * 5 - 2;
+            this.size = Math.random() * 0.5 + 0.5;
+            this.x = canvas.width + this.size;
+            this.y = canvas.height + this.size;
+            this.speed_x = Math.random() * -0.5 -0.5;
+            this.speed_y = Math.random() * -0.5 -0.5;
             this.radians = 0;
-            this.radian_increment = Math.random() * 0.3 - 0.15;
-            this.curve = Math.random() * 5 - 2;
+            this.radian_increment = Math.random() * 0.2 - 0.1;
+            this.particle_colors = ['yellow', 'red', 'white'];
+            this.color = this.particle_colors[Math.floor(Math.random() * this.particle_colors.length)];
         }
         update() {
             this.radians += this.radian_increment;
-            this.x += this.speed;
-            this.y += Math.sin(this.radians) * this.curve;
+            this.x += this.speed_x + Math.sin(this.radians);
+            this.y += this.speed_y + Math.cos(this.radians);
+            this.speed_y += 0.001;
             
             // Boundaries
-            if (this.x > canvas.width) {
-                this.x = 0;
-                this.speed = Math.random() * 5 - 2;
-                this.radian_increment = Math.random() * 0.3 - 0.15;
-                this.curve = Math.random() * 5 - 2;
-            };
             if (this.x < 0) {
-                this.x = canvas.width;
-                this.speed = Math.random() * 5 - 2;
+                this.x = canvas.width + this.size;
+                this.y = canvas.height + this.size;
+                this.speed_x = Math.random() * -2 -2;
+                this.speed_y = Math.random() * -2 -2;
                 this.radians = 0;
                 this.radian_increment = Math.random() * 0.3 - 0.15;
-                this.curve = Math.random() * 5 - 2;
             };
             
-            if (this.y > canvas.height) {
-                this.y = 0;
-                this.speed = Math.random() * 5 - 2;
-                this.radian_increment = Math.random() * 0.3 - 0.15;
-                this.curve = Math.random() * 5 - 2;
-            };
             if (this.y < 0) {
-                this.y = canvas.height
-                this.speed = Math.random() * 5 - 2;
+                this.x = canvas.width + this.size;
+                this.y = canvas.height + this.size;
+                this.speed_x = Math.random() * -2 -2;
+                this.speed_y = Math.random() * -2 -2;
                 this.radians = 0;
                 this.radian_increment = Math.random() * 0.3 - 0.15;
-                this.curve = Math.random() * 5 - 2;
             };
             
         }
         draw() {
             ctx.beginPath();
-            ctx.strokeStyle = 'blue';
+            ctx.fillStyle = this.color;
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, true);
-            ctx.stroke();
+            ctx.fill();
             ctx.closePath();
         }
     }
     
-    let numberOfParticles = 20;
-    let particleArr = [];
+    let numberOfParticles = 500;
+    let particles_arr = [];
     
-    const init = (particles) => {
-        for (let i = 0; i < particles; i++) {
-            particleArr.push(new Particle());
+    const init = (num_of_particles) => {
+        for (let i = 0; i < num_of_particles; i++) {
+            particles_arr.push(new Particle());
         }
     };
     init(numberOfParticles);
@@ -84,10 +77,8 @@ setTimeout(() => {
         ctx.beginPath()
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
-        for (let i = 0; i < particleArr.length; i++) {
-            //particleArr[i].draw();
-            //particleArr[i].update();
-        }
+        particles_arr.forEach(particle => particle.update());
+        particles_arr.forEach(particle => particle.draw());
         requestAnimationFrame(animate);
     };
     animate();
