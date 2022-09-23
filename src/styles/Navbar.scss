@@ -32,8 +32,6 @@
         margin-top: 40px;
         
         a {
-            text-decoration: none;
-            outline: none;
             color: white;
             
             .name {
@@ -61,15 +59,12 @@
         margin-top: 40px;
         
         a {
-            text-decoration: none;
-            outline: none;
             margin-right: 10%;
             
             .link {
                 font-family: 'Edu VIC WA NT Beginner', cursive !important;
                 font-size: 18px;
                 font-weight: 600;
-                text-decoration: none;
                 transition: all 0.2s ease-in-out;
                 color: white;
                 cursor: pointer;
@@ -111,11 +106,7 @@
                 padding-block: 50px;
             }
             
-            a {
-                text-decoration: none;
-                outline: none;
-                
-                
+            a { 
                 .link {
                     display: flex;
                     align-items: center;
@@ -123,14 +114,13 @@
                     font-family: 'Edu VIC WA NT Beginner', cursive !important;
                     font-size: 20px;
                     font-weight: 600;
-                    text-decoration: none;
                     width: 120px;
                     margin-block: 35px;
                     margin-inline: 37%;
                     color: white;
                     border-bottom: 1px solid white;
-                    transition: all 0.2s ease-in-out;
                     cursor: pointer;
+                    transition: all 0.2s ease-in-out;
                     
                     &:hover {
                         transform: scale(1.3);

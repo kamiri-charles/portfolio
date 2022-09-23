@@ -23,38 +23,76 @@ const Projects = () => {
 
     useEffect(() => {
         const projects_arr = [
+            // ReactJs
             {
-                'name': 'react',
-                'el': document.getElementById('1'),
-                'total_projects': 4
+                name: 'react',
+                el: document.getElementById('1'),
+                total_projects: 1,
+                projects: [
+                    {
+                        title: 'Movie Quote Generator',
+                        desc: 'A web app that generates random famous movie quotes.',
+                        image: 'mvg.jpg',
+                        link: 'https://kamiri-charles.github.io/movie-quote-generator/'
+                    }
+                ]
             },
+
+            // Django
             {
-                'name': 'django',
-                'el': document.getElementById('2'),
-                'total_projects': 4
+                name: 'django',
+                el: document.getElementById('2'),
+                projects: [
+                    {
+                        title: 'Coming soon',
+                        desc: 'Work in progress.',
+                        image: 'wip.jpeg',
+                        link: 'https://github.com/kamiri-charles'
+                    }
+                ]
             },
+
+            // Game Dev
             {
-                'name': 'game-dev',
-                'el': document.getElementById('3'),
-                'total_projects': 5
+                name: 'game-dev',
+                el: document.getElementById('3'),
+                projects: [
+                    {
+                        title: 'Coming soon',
+                        desc: 'Work in progress.',
+                        image: 'wip.jpeg',
+                        link: 'https://github.com/kamiri-charles'
+                    }
+                ]
             },
+
+            // Misc
             {
-                'name': 'misc',
-                'el': document.getElementById('4'),
-                'total_projects': 3
+                name: 'misc',
+                el: document.getElementById('4'),
+                projects: [
+                    {
+                        title: 'Coming soon',
+                        desc: 'Work in progress.',
+                        image: 'wip.jpeg',
+                        link: 'https://github.com/kamiri-charles'
+                    }
+                ]
             }
         ];
-        load_projects(works_container, projects_arr[0].total_projects);
-        let current_project_name = projects_arr[0].name;
 
+
+
+        
+        load_projects(works_container, projects_arr[0].projects);
         projects_arr.forEach(obj => {
             obj.el.addEventListener('click', () => {
-                window.innerWidth <= 753 ? projects_nav_control() : console.log('on a laptop');
+                window.innerWidth <= 753 ? projects_nav_control() : console.log('');
                 for (let i = 0; i < projects_arr.length; i++) {
                     projects_arr[i].el.classList.remove('active');
                 }
                 obj.el.classList.add('active');
-                load_projects(works_container, obj.total_projects);
+                load_projects(works_container, obj.projects);
             });
         })
     });

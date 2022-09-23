@@ -21,8 +21,7 @@ setTimeout(() => {
             this.speed_y = Math.random() * -0.5 -0.5;
             this.radians = 0;
             this.radian_increment = Math.random() * 0.2 - 0.1;
-            this.particle_colors = ['yellow', 'red', 'white'];
-            this.color = this.particle_colors[Math.floor(Math.random() * this.particle_colors.length)];
+            this.color = 'white';
         }
         update() {
             this.radians += this.radian_increment;
@@ -34,8 +33,8 @@ setTimeout(() => {
             if (this.x < 0) {
                 this.x = canvas.width + this.size;
                 this.y = canvas.height + this.size;
-                this.speed_x = Math.random() * -2 -2;
-                this.speed_y = Math.random() * -2 -2;
+                this.speed_x = Math.random() * -0.5 -0.5;
+                this.speed_y = Math.random() * -0.5 -0.5;
                 this.radians = 0;
                 this.radian_increment = Math.random() * 0.3 - 0.15;
             };
@@ -43,8 +42,8 @@ setTimeout(() => {
             if (this.y < 0) {
                 this.x = canvas.width + this.size;
                 this.y = canvas.height + this.size;
-                this.speed_x = Math.random() * -2 -2;
-                this.speed_y = Math.random() * -2 -2;
+                this.speed_x = Math.random() * -0.5 -0.5;
+                this.speed_y = Math.random() * -0.5 -0.5;
                 this.radians = 0;
                 this.radian_increment = Math.random() * 0.3 - 0.15;
             };
@@ -68,7 +67,7 @@ setTimeout(() => {
         }
     };
     init(numberOfParticles);
-
+    
     const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
     gradient.addColorStop(0, '#7F00FF');
     gradient.addColorStop(1, '#E100FF');

@@ -7,6 +7,12 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+a, button, textarea, input {
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
 body {
   box-sizing: border-box;
   max-width: 100%;

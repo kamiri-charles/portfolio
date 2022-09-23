@@ -105,12 +105,45 @@
             }
             
             
-            div {
-                width: 80px;
-                height: 80px;
+            .project {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 250px;
+                height: 200px;
                 border-radius: 3px;
-                background: black;
+                background: azure;
+                color: black;
                 margin: 20px;
+                padding: 10px;
+                text-align: center;
+                cursor: pointer;
+                transition: all 0.3s ease-in;
+                
+                .title {
+                    color: blue;
+                    text-decoration: underline;
+                    font-family: 'Edu VIC WA NT Beginner', cursive !important;
+                    font-size: 18px;
+
+                }
+                
+                img {
+                    width: 60%;
+                    height: auto;
+                    margin-block: 20px;
+                    object-fit: contain;
+                }
+                
+                .desc {
+                    border-top: 1px solid blue;
+                    font-family: 'Edu NSW ACT Foundation', cursive !important;
+                }
+                
+                &:hover {
+                    transform: scale(1.02);
+                }
             }
         }
         
