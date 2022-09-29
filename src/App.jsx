@@ -6,7 +6,7 @@ import Certification from './components/Certification';
 import Contact from './components/Contact';
 import Thanks from './components/Thanks';
 
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.scss';
 
 const App = () => {
