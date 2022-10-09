@@ -1,6 +1,6 @@
-import '../styles/Home.scss';
-import Typed from 'typed.js';
-import { useEffect, useRef } from 'react';
+import '../styles/Home.scss'
+import Typed from 'typed.js'
+import { useEffect, useRef } from 'react'
 
 let typed_text = {
     strings: ["Charles Kamiri"],

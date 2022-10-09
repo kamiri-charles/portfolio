@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
 /* eslint-disable default-case */
-import { faGithub, faInstagram, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useEffect } from 'react';
-import '../styles/Contact.scss';
+import { faGithub, faInstagram, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useEffect } from 'react'
+import '../styles/Contact.scss'
 
 const Contact = () => {
     useEffect(() => {

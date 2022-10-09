@@ -1,4 +1,5 @@
-import '../styles/Certification.scss';
+import '../styles/Certification.scss'
+
 const Certification = () => {
     return (
         <div id="certification">

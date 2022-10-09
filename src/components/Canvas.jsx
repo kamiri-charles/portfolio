@@ -1,5 +1,5 @@
-import '../assets/scripts/canvas.js';
-import '../styles/Canvas.scss';
+import '../assets/scripts/canvas.js'
+import '../styles/Canvas.scss'
 
 const Canvas = () => {
     return (

@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/Navbar.scss';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import '../styles/Navbar.scss'
 
 let menu_icon = faBars;
 const open_menu = () => {

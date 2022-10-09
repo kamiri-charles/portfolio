@@ -1,6 +1,6 @@
-import '../styles/Thanks.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import '../styles/Thanks.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouse } from '@fortawesome/free-solid-svg-icons'
 
 const Thanks = () => {
     return (

@@ -1,12 +1,11 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-import { faPython, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faAngleLeft,  faAngleRight,  faGamepad, faInfinity } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../styles/Projects.scss';
-import { useEffect } from 'react';
-import load_projects from '../assets/scripts/projects_script';
-import '../assets/scripts/projects_script';
+import { faPython, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faAngleRight,  faGamepad, faInfinity } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '../styles/Projects.scss'
+import { useEffect } from 'react'
+import load_projects from '../assets/scripts/projects_script'
+import '../assets/scripts/projects_script'
 
 
 const Projects = () => {
