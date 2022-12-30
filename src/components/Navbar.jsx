@@ -27,7 +27,7 @@ const Navbar = () => {
                 <FontAwesomeIcon icon={ menu_icon } />
             </div>
             <div className="navbar-left">
-                <Link to="/">
+                <Link to="/portfolio">
                     <div className="name">
                         Charles Kamiri
                     </div>
@@ -36,17 +36,17 @@ const Navbar = () => {
 
             <div className="navbar-right">
                 {/* Projects */}
-                <Link to='projects'>
+                <Link to='/portfolio/projects'>
                     <div className="link">Projects</div>
                 </Link>
 
                 {/* Certification */}
-                <Link to='certification'>
+                <Link to='/portfolio/certification'>
                     <div className="link">Certification</div>
                 </Link>
 
                 {/* Contact */}
-                <Link to='contact'>
+                <Link to='/portfolio/contact'>
                     <div className="link">Contact</div>
                 </Link>
 
@@ -54,15 +54,15 @@ const Navbar = () => {
 
             {/* Mobile navbar */}
             <div id="menu">
-                <Link to='projects'>
+                <Link to='/portfolio/projects'>
                     <div className="link" onClick={open_menu}>Projects</div>
                 </Link>
 
-                <Link to='certification'>
+                <Link to='/portfolio/certification'>
                     <div className="link" onClick={open_menu}>Certification</div>
                 </Link>
 
-                <Link to='contact'>
+                <Link to='/portfolio/contact'>
                     <div className="link" onClick={open_menu}>Contact</div>
                 </Link>
 

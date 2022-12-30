@@ -1,7 +1,7 @@
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPython, faReact } from '@fortawesome/free-brands-svg-icons'
-import { faAngleRight,  faGamepad, faInfinity } from '@fortawesome/free-solid-svg-icons'
+import { faAngleRight, faInfinity, faGamepad } from '@fortawesome/free-solid-svg-icons'
 import Loader from './Loader'
 import '../styles/Projects.scss'
 import Project from './Project'
@@ -46,9 +46,26 @@ const Projects = () => {
         }
     }
 
+    let toggle_projects_nav = () => {
+        const projects_nav = document.getElementById('projects_nav');
+        const projects_nav_control_btn = document.getElementsByClassName('projects-nav-control-btn')[0];
+
+        if (projects_nav.classList.contains('inactive')) {
+            projects_nav.classList.remove('inactive');
+            projects_nav.classList.add('active');
+            projects_nav_control_btn.classList.remove('projects-active');
+            projects_nav_control_btn.classList.add('projects-inactive');
+        } else {
+            projects_nav.classList.remove('active');
+            projects_nav.classList.add('inactive');
+            projects_nav_control_btn.classList.remove('projects-inactive');
+            projects_nav_control_btn.classList.add('projects-active');
+        }
+    }
+
     return (
         <div id="projects">
-            <div className="projects-nav-control-btn projects-active">
+            <div className="projects-nav-control-btn projects-active" onClick={toggle_projects_nav}>
                 <FontAwesomeIcon icon={ faAngleRight } />
             </div>
 
