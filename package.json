@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://kamiri-charles.github.io",
+  "homepage": "https://kamiri-charles.github.io/portfolio/",
   "proxy": "https://projects-api.herokuapp.com/",
   "private": true,
   "dependencies": {
