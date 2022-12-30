@@ -16,7 +16,7 @@ const Projects = () => {
         setProjects(null);
         setTimeout(() => {
             (async () => {
-                fetch(`/api/projects/${active}/`)
+                fetch(`https://projects-api.herokuapp.com/api/projects/${active}/`)
                 .then(res => res.json())
                 .then(data => setProjects(data))
             }) ();
