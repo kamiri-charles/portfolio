@@ -11,8 +11,8 @@ jobs:
         with:
           persist-credentials: false
       - uses: actions/checkout@v2
-      - run: yarn install --frozen-lockfile # run install script
-      - run: yarn deploy # run build script
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
       # npm version:
       #- run: npm ci
       #- run: npm run build
