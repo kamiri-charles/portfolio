@@ -62,7 +62,6 @@
             
             &.active {
                 background: black;
-                
                 color: white;
                 
                 svg path {
@@ -71,7 +70,7 @@
             }
             
             &:hover {
-                background: black;
+                background: rgba(0, 0, 0, 0.8);
                 color: white;
                 
                 svg path {
