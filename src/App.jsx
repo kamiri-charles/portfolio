@@ -15,12 +15,12 @@ const App = () => {
       <Canvas />
       <Router>
         <Routes>
-          <Route exact path='/portfolio' element={ <Home /> } />
-          <Route exact path='/portfolio/home' element={ <Home /> } />
-          <Route exact path='/portfolio/projects' element={ <Projects /> } />
-          <Route exact path='/portfolio/certification' element={ <Certification /> } />
-          <Route exact path='/portfolio/contact' element={ <Contact /> } />
-          <Route exact path='/portfolio/email-submission-success' element={ <Thanks />} />
+          <Route exact path='/' element={ <Home /> } />
+          <Route exact path='/home' element={ <Home /> } />
+          <Route exact path='/projects' element={ <Projects /> } />
+          <Route exact path='/certification' element={ <Certification /> } />
+          <Route exact path='/contact' element={ <Contact /> } />
+          <Route exact path='/email-submission-success' element={ <Thanks />} />
         </Routes>
         <Navbar />
       </Router>

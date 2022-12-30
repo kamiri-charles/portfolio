@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 import { faAngleRight, faInfinity, faGamepad } from '@fortawesome/free-solid-svg-icons'
@@ -10,6 +10,7 @@ import Project from './Project'
 const Projects = () => {
     let [projects, setProjects] = useState();
     let [active, setActive] = useState('react');
+    let projects_nav_btn = useRef();
 
     useEffect(() => {
         setProjects(null);
@@ -48,24 +49,23 @@ const Projects = () => {
 
     let toggle_projects_nav = () => {
         const projects_nav = document.getElementById('projects_nav');
-        const projects_nav_control_btn = document.getElementsByClassName('projects-nav-control-btn')[0];
 
         if (projects_nav.classList.contains('inactive')) {
             projects_nav.classList.remove('inactive');
             projects_nav.classList.add('active');
-            projects_nav_control_btn.classList.remove('projects-active');
-            projects_nav_control_btn.classList.add('projects-inactive');
+            projects_nav_btn.current.classList.remove('projects-active');
+            projects_nav_btn.current.classList.add('projects-inactive');
         } else {
             projects_nav.classList.remove('active');
             projects_nav.classList.add('inactive');
-            projects_nav_control_btn.classList.remove('projects-inactive');
-            projects_nav_control_btn.classList.add('projects-active');
+            projects_nav_btn.current.classList.remove('projects-inactive');
+            projects_nav_btn.current.classList.add('projects-active');
         }
     }
 
     return (
         <div id="projects">
-            <div className="projects-nav-control-btn projects-active" onClick={toggle_projects_nav}>
+            <div ref={projects_nav_btn} className="projects-nav-control-btn projects-active" onClick={toggle_projects_nav}>
                 <FontAwesomeIcon icon={ faAngleRight } />
             </div>
 

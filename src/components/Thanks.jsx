@@ -1,6 +1,6 @@
-import '../styles/Thanks.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse } from '@fortawesome/free-solid-svg-icons'
+import '../styles/Thanks.scss'
 
 const Thanks = () => {
     return (
@@ -12,7 +12,7 @@ const Thanks = () => {
                 <br />
                 <br />
                 <br />
-                <a href="https://kamiri-charles.github.io/portfolio/">
+                <a href="https://portfolio.kamiri.live">
                     <FontAwesomeIcon icon={ faHouse } />
                 </a>
             </div>
