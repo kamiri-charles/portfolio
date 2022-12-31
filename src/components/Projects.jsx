@@ -20,7 +20,7 @@ const Projects = () => {
                 .then(res => res.json())
                 .then(data => setProjects(data))
             }) ();
-        }, 3000);
+        }, 2000);
 
         change_active_project();
     }, [active]);
