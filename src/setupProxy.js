@@ -7,7 +7,7 @@ module.exports = function(app) {
             target: 'https://projects-api.herokuapp.com',
             changeOrigin: true,
         }),
-        
+
         '/images',
         createProxyMiddleware({
             target: 'https://projects-api.herokuapp.com',
