@@ -16,7 +16,7 @@ const Projects = () => {
         setProjects(null);
         setTimeout(() => {
             (async () => {
-                fetch(`https://projects-api.herokuapp.com/api/projects/${active}/`)
+                fetch(`https://kamiri-projects-api.azurewebsites.net/api/${active}/`)
                 .then(res => res.json())
                 .then(data => setProjects(data))
             }) ();
