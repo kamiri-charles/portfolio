@@ -1,4 +1,4 @@
-# Movie Quote Generator
+# Kamiri | Portfolio
 
 ## Table of Contents
 
