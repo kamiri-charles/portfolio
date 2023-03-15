@@ -14,13 +14,12 @@ const Projects = () => {
 
     useEffect(() => {
         setProjects(null);
-        setTimeout(() => {
-            (async () => {
-                fetch(`https://kamiri-projects-api.azurewebsites.net/api/${active}/`)
-                .then(res => res.json())
-                .then(data => setProjects(data))
-            }) ();
-        }, 2000);
+        
+        (async () => {
+            fetch(`https://kamiri-projects-api.azurewebsites.net/api/${active}/`)
+            .then(res => res.json())
+            .then(data => setProjects(data))
+        }) ();
 
         change_active_project();
     }, [active]);
