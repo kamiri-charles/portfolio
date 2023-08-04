@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Canvas from './components/Canvas';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -6,7 +6,6 @@ import Projects from './components/Projects';
 import Certification from './components/Certification';
 import Contact from './components/Contact';
 import Thanks from './components/Thanks';
-
 import './App.scss';
 
 const App = () => {
