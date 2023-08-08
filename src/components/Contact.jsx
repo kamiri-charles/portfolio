@@ -55,25 +55,8 @@ const Contact = () => {
                     <div className="link-text">Contribute to some of my projects on GitHub <br /> @kamiri-charles</div>
                 </a>
 
-                {/* Linkedin */}
-                <a href="https://www.linkedin.com/in/charles-kamiri-5012a9209/" className='linkedin' target='_blank' rel='noreferrer'>
-                    <div className="icon">
-                        <FontAwesomeIcon icon={ faLinkedin } />
-                    </div>
-                    <div className="link-text">I'm also available on LinkedIn! <br /> @Charles-Kamiri</div>
-                </a>
-
-                {/* Instagram */}
-                <a href="https://instagram.com/kamiri.charles" className='instagram' target='_blank' rel='noreferrer'>
-                    <div className="icon">
-                        <FontAwesomeIcon icon={ faInstagram } />
-                    </div>
-                    <div className="link-text">Instagram <br /> @kamiri.charles</div>
-                </a>
-
                 {/* Whatsapp */}
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a href="" className='whatsapp' target='_blank' rel='noreferrer'>
+                <a href="" className='whatsapp' rel='noreferrer'>
                     <div className="icon">
                         <FontAwesomeIcon icon={ faWhatsapp } />
                     </div>
