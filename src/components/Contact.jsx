@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable default-case */
-import { faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faWhatsapp, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect } from 'react'
 import '../styles/Contact.scss'
@@ -53,6 +53,14 @@ const Contact = () => {
                         <FontAwesomeIcon icon={ faGithub } />
                     </div>
                     <div className='link-text'>Contribute to some of my projects on GitHub <br /> @kamiri-charles</div>
+                </a>
+
+                {/* Discord */}
+                <a href='https://discord.com' className='discord' target='_blank' rel='noreferrer'>
+                    <div className='icon'>
+                        <FontAwesomeIcon icon={ faDiscord } />
+                    </div>
+                    <div className='link-text'>I'm also available on Discord. <br /> @kamiri_ke</div>
                 </a>
 
                 {/* Whatsapp */}

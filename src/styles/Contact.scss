@@ -128,7 +128,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            transition: all 0.3s ease;
+            transition: transform 0.3s ease;
 
             .icon {
                 font-size: 50px;
@@ -149,7 +149,21 @@
             }
 
             &.github {
-                background: rgb(58, 57, 57);
+                background: white;
+                
+                .link-text {
+                    color: black;
+                }
+
+                .icon {
+                    svg path {
+                        color: black;
+                    }
+                }
+            }
+
+            &.discord {
+                background: black;
             }
 
             &.whatsapp {
