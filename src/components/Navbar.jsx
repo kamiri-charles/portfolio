@@ -1,31 +1,36 @@
-/* eslint-disable no-undef */
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import '../styles/Navbar.scss'
-
-let menu_icon = faBars;
-const open_menu = () => {
-    if (menu.classList.contains('active')) {
-        menu.classList.remove('active');
-    } else {
-        menu.classList.add('active');
-        menu_icon = faTimes;
-    }
-}
+import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/Navbar.scss';
 
 const Navbar = () => {
+
+    let [menu_icon, setMenuIcon] = useState('bx bx-menu-alt-left');
+
+    const navbar = useRef();
+    const menu = useRef();
+
+    let open_menu = () => {
+        if (menu.current.classList.contains('active')) {
+            menu.current.classList.remove('active');
+            setMenuIcon('bx bx-menu-alt-left');
+        } else {
+            menu.current.classList.add('active');
+            setMenuIcon('bx bx-x');
+        }
+}
+
+
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            window.scrollY > 5 ? navbar.classList.add('scrolled') : navbar.classList.remove('scrolled');
+            window.scrollY > 5 ? navbar.current.classList.add('scrolled') : navbar.current.classList.remove('scrolled');
         })
     })
     return (
-        <div id="navbar">
+        <div id="navbar" ref={navbar}>
             <div id="ham-menu" onClick={ open_menu }>
-                <FontAwesomeIcon icon={ menu_icon } />
+                <i className={menu_icon}></i>
             </div>
+
             <div className="navbar-left">
                 <Link to="/">
                     <div className="name">
@@ -53,7 +58,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile navbar */}
-            <div id="menu">
+            <div ref={menu} id='menu'>
                 <Link to='/projects'>
                     <div className="link" onClick={open_menu}>Projects</div>
                 </Link>

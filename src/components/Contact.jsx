@@ -1,21 +1,19 @@
-/* eslint-disable no-undef */
-/* eslint-disable default-case */
-import { faGithub, faWhatsapp, faDiscord } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useEffect } from 'react'
-import '../styles/Contact.scss'
+import { useEffect, useRef } from 'react';
+import '../styles/Contact.scss';
 
 const Contact = () => {
+
+    const input_1 = useRef();
+    const input_2 = useRef();
+
     useEffect(() => {
-        input_1.addEventListener('focusout', () => {
-            input_1.value !== '' ? input_1.classList.add('active') : input_1.classList.remove('active'); 
+        input_1.current.addEventListener('focusout', () => {
+            input_1.current.value !== '' ? input_1.current.classList.add('active') : input_1.current.classList.remove('active'); 
         })
 
-        input_2.addEventListener('focusout', () => {
-            input_2.value !== '' ? input_2.classList.add('active') : input_1.classList.remove('active'); 
+        input_2.current.addEventListener('focusout', () => {
+            input_2.current.value !== '' ? input_2.current.classList.add('active') : input_1.current.classList.remove('active'); 
         })
-
-
     });
 
     return (
@@ -26,12 +24,12 @@ const Contact = () => {
                     <div className='sub-sub-title'>Send me an email.</div>
                     <label>
                         Subject
-                        <input type='text' id='input_1' name='Subject' required />
+                        <input type='text' ref={input_1} name='Subject' required />
                     </label>
 
                     <label>
                         Email
-                        <input type='email' id='input_2' name='Email' required />
+                        <input type='email' ref={input_2} name='Email' required />
                     </label>
                     <input type='hidden' name='_captcha' value='false' />
                     <input type='hidden' name='_next' value='https://portfolio.kamiri.live/#/email-submission-success' />
@@ -50,7 +48,7 @@ const Contact = () => {
                 {/* Github */}
                 <a href='https://github.com/kamiri-charles' className='github' target='_blank' rel='noreferrer'>
                     <div className='icon'>
-                        <FontAwesomeIcon icon={ faGithub } />
+                        <i className="bx bxl-github"></i>
                     </div>
                     <div className='link-text'>Contribute to some of my projects on GitHub <br /> @kamiri-charles</div>
                 </a>
@@ -58,7 +56,7 @@ const Contact = () => {
                 {/* Discord */}
                 <a href='https://discord.com' className='discord' target='_blank' rel='noreferrer'>
                     <div className='icon'>
-                        <FontAwesomeIcon icon={ faDiscord } />
+                        <i className="bx bxl-discord-alt"></i>
                     </div>
                     <div className='link-text'>I'm also available on Discord. <br /> @kamiri_ke</div>
                 </a>
@@ -66,7 +64,7 @@ const Contact = () => {
                 {/* Whatsapp */}
                 <a href='https://wa.me/254797317704' className='whatsapp' target='_blank' rel='noreferrer'>
                     <div className='icon'>
-                        <FontAwesomeIcon icon={ faWhatsapp } />
+                        <i className="bx bxl-whatsapp"></i>
                     </div>
                     <div className='link-text'>+254 797-317-704 <br />Send a quick text, maybe even a call... and let's connect</div>
                 </a>

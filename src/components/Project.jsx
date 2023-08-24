@@ -1,10 +1,19 @@
-const Project = ({title, desc, image, link}) => {
+const Project = ({name, description, imageUrl, url, icons}) => {
     return (
-        <a className="project" href={link} target="_blank" rel="noreferrer">
-            <div className="title">{title}</div>
-            <img src={"https://kamiri-projects-api.azurewebsites.net" + image} alt="project_image" />
-            <div className="desc">{desc}</div>
-        </a>
+        <div className="project">
+            <div className="img-wrapper">
+                <img src={imageUrl} alt="project-img" />
+            </div>
+
+            <div className="meta">
+                <div className="name">{name}</div>
+                <div className="description">{description}</div>
+
+                <div className="icons">
+                    {icons.split(' ').map(icon => <i key={icon} className={`bx bxl-${icon}`}></i>)}
+                </div>
+            </div>
+        </div>
     )
 }
 

@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse } from '@fortawesome/free-solid-svg-icons'
 import '../styles/Thanks.scss'
 
 const Thanks = () => {
@@ -13,7 +11,7 @@ const Thanks = () => {
                 <br />
                 <br />
                 <a href="https://portfolio.kamiri.live">
-                    <FontAwesomeIcon icon={ faHouse } />
+                    <i className="bx bx-home-alt-2"></i>
                 </a>
             </div>
         </div>

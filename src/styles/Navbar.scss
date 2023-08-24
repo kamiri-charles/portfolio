@@ -15,9 +15,10 @@
     
     #ham-menu {
         background: transparent;
-        svg path {
-            color: transparent;
-        }
+        cursor: pointer;
+        
+
+        i {color: transparent; font-size: 30px;}
     }
     
     #menu {
@@ -85,9 +86,7 @@
         #ham-menu {
             margin: 70px -50px 0 50px;
             font-size: 20px;
-            svg path {
-                color: #fff;
-            }
+            i {color: #fff;}
         }
         
         #menu {

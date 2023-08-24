@@ -133,9 +133,7 @@
             .icon {
                 font-size: 50px;
 
-                svg path {
-                    color: white;
-                }
+                i {color: white;}
             }
 
             .link-text {
@@ -156,9 +154,7 @@
                 }
 
                 .icon {
-                    svg path {
-                        color: black;
-                    }
+                    i {color: black;}
                 }
             }
 

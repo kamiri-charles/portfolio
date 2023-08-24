@@ -14,20 +14,20 @@
     a {
         font-size: 30px;
         cursor: pointer;
-        border: 1px solid blue;
+        border: 1px solid white;
         padding: 5px;
         border-radius: 50%;
-        transition: all 0.5s ease;
+        transition: all 0.3s ease;
 
-        svg path {
-            color: blue;
+        i {
+            color: white;
         }
 
         &:hover {
-            background: blue;
+            background: white;
             padding: 20px;
-            svg path {
-                color: white;
+            i {
+                color: black;
             }
         }
     }
