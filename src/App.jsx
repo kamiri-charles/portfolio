@@ -11,8 +11,7 @@ import "./App.scss";
 
 const App = () => {
   return (
-    <>
-      <Canvas />
+    <div className='App'>
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -24,7 +23,7 @@ const App = () => {
         </Routes>
         <Navbar />
       </Router>
-    </>
+    </div>
   );
 };
 
