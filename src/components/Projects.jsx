@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import '../styles/Projects.scss';
 import Project from './Project';
 import Loader from './Loader';
+import '../styles/Projects.scss';
 
 
 const Projects = () => {
