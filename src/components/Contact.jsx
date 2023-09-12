@@ -32,7 +32,7 @@ const Contact = () => {
                         <input type='email' ref={input_2} name='Email' required />
                     </label>
                     <input type='hidden' name='_captcha' value='false' />
-                    <input type='hidden' name='_next' value='https://portfolio.kamiri.live/#/email-submission-success' />
+                    <input type='hidden' name='_next' value='https://portfolio.kamiri.live/portfolio/email-submission-success' />
                     <div className='to'>
                         <span>To: </span>
                         charleskamiri6@gmail.com
