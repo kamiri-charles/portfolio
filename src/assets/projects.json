@@ -1,0 +1,9 @@
+[
+    {
+        "title": "Movie Quote Generator",
+        "description": "A web app that generates random movie quotes",
+        "image": "assets/images/movie-quote-generator.jpg",
+        "link": "https://kamiri-charles.github.io/movie-quote-generator/",
+        "icons": "react javascript html5 sass"
+    }
+]

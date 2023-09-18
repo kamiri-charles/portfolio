@@ -23,7 +23,6 @@ const TypedSkills = () => {
         'Pythonista.',
         'Game Developer.',
         'Java (Spring Boot) Developer.',
-        'Content Creator.',
         'Freelancer.',
         'Consultant.',
         'Database Administrator.'

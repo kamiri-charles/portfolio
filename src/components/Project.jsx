@@ -1,8 +1,11 @@
-const Project = ({name, description, imageUrl, url, icons}) => {
+const Project = ({name, description, image, url, icons}) => {
+
+    const imagePath = require(`../${image}`);
+
     return (
         <div className="project">
             <div className="img-wrapper">
-                <img src={imageUrl} alt="project-img" />
+                <img src={imagePath} alt="project-img" />
             </div>
 
             <div className="meta">
