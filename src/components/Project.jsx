@@ -1,9 +1,9 @@
-const Project = ({name, description, image, url, icons}) => {
+const Project = ({name, description, image, link, icons}) => {
 
     const imagePath = require(`../${image}`);
 
     return (
-        <div className="project">
+        <a href={link} className="project" target="_blank" rel="noreferrer">
             <div className="img-wrapper">
                 <img src={imagePath} alt="project-img" />
             </div>
@@ -16,7 +16,7 @@ const Project = ({name, description, image, url, icons}) => {
                     {icons.split(' ').map(icon => <i key={icon} className={`bx bxl-${icon}`}></i>)}
                 </div>
             </div>
-        </div>
+        </a>
     )
 }
 
