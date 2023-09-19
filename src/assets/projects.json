@@ -5,5 +5,13 @@
         "image": "assets/images/movie-quote-generator.jpg",
         "link": "https://kamiri-charles.github.io/movie-quote-generator/",
         "icons": "react javascript html5 sass"
+    },
+
+    {
+        "title": "Matrix Rain Effect",
+        "description": "Inspired by the matrix.",
+        "image": "assets/images/matrix-rain-effect.jpg",
+        "link": "https://kamiri-charles.github.io/matrix-rain-effect/",
+        "icons": "react javascript"
     }
 ]
