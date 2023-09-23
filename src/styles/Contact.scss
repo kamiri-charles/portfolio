@@ -25,16 +25,6 @@
             align-items: center;
             justify-content: center;
             
-            .sub-sub-title {
-                font-size: 20px;
-                width: 30%;
-                max-width: 500px;
-                margin: 0 0 0 0;
-                border-bottom: 1px solid black;
-                text-align: center;
-                color: black;
-            }
-            
             label {
                 margin: 20px;
                 display: grid;
@@ -47,15 +37,15 @@
                     font-size: 15px;
                     width: 300px;
                     height: 30px;
-                    border-bottom: 2px solid white;
+                    border-bottom: 1px solid white;
                     background: transparent;
                     transition: all 0.3s ease;
                     
                     &:focus, &.active{
                         margin: 5px 0 0 0;
-                        background: white;                        
+                        background: white;
+                        border-radius: 5px;                        
                     }
-                    
                 }
             }
 
@@ -79,6 +69,7 @@
                 font-weight: 600;
                 background: white;
                 color: black;
+                border-radius: 5px;
             }
             
             .send {
@@ -133,17 +124,15 @@
             .icon {
                 font-size: 50px;
 
-                i {color: white;}
+                i {
+                    color: white;
+                }
             }
 
             .link-text {
                 font-family: cursive;
                 color: white;
                 font-size: 14px;
-            }
-
-            &:hover {
-                transform: scale(1.05);
             }
 
             &.github {
@@ -172,23 +161,12 @@
 
 /* Mobile */
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     #contact {
         flex-wrap: wrap;
-
-        .sub-title {
-            display: none;
-        }
         .left {
             width: 100%;
             margin: auto;
-
-            form {
-                .sub-sub-title {
-                    width: 50%;
-                    margin-top: 40px;
-                }
-            }
         }
 
 

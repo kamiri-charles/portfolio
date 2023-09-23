@@ -21,7 +21,6 @@ const Contact = () => {
             <div className='sub-title'>Get in touch</div>
             <div className='left'>
                 <form action='https://formsubmit.co/5468185aaec8dc6707c6f8bc9216c88c' method='POST'>
-                    <div className='sub-sub-title'>Send me an email.</div>
                     <label>
                         Subject
                         <input type='text' ref={input_1} name='Subject' required />
