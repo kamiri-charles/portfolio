@@ -1,4 +1,4 @@
-const Project = ({name, description, image, link, icons}) => {
+const Project = ({title, description, image, link, icons}) => {
 
     const imagePath = require(`../${image}`);
 
@@ -9,7 +9,7 @@ const Project = ({name, description, image, link, icons}) => {
             </div>
 
             <div className="meta">
-                <div className="name">{name}</div>
+                <div className="name">{title}</div>
                 <div className="description">{description}</div>
 
                 <div className="icons">
