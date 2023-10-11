@@ -20,6 +20,6 @@
         "description": "A 2d HTML canvas game. Still in development.",
         "image": "assets/images/martial-hero.jpg",
         "link": "https://kamiri-charles.github.io/martial-hero/",
-        "icons": "typescript html5 css unity"
+        "icons": "typescript html5 css3 unity"
     }
 ]

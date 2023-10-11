@@ -2,16 +2,12 @@
     position: fixed;
     width: 80%;
     height: 120px;
-    background: transparent;
+    background: #7F00FF;
     display: flex;
     flex-wrap: nowrap;
     margin-left: 10%;
     border-bottom: 2px solid white;
     transition: all 0.3s ease;
-    
-    &.scrolled {
-        background: #7F00FF;        
-    }
     
     #ham-menu {
         background: transparent;
