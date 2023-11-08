@@ -37,7 +37,7 @@ const Contact = () => {
             <input
               type="hidden"
               name="_next"
-              value="https://portfolio.kamiri.live/portfolio/email-submission-success"
+              value="https:/kamiri.tech/portfolio/email-submission-success"
             />
             <div className="to">
               <span>To: </span>

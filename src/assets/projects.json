@@ -21,5 +21,12 @@
         "image": "assets/images/martial-hero.jpg",
         "link": "https://kamiri-charles.github.io/martial-hero/",
         "icons": "typescript html5 css3 unity"
+    },
+    {
+        "title": "Heal Together",
+        "description": "A web teletherapy app. Still in development.",
+        "image": "assets/images/heal-together.jpg",
+        "link": "https://kamiri-charles.github.io/heal-together/",
+        "icons": "react javascript html5 sass"
     }
 ]
