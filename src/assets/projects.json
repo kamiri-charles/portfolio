@@ -1,33 +1,41 @@
 [
-    {
-        "title": "Heal Together",
-        "description": "A web teletherapy app. Still in development.",
-        "image": "assets/images/heal-together.jpg",
-        "link": "https://kamiri-charles.github.io/heal-together/",
-        "icons": "react javascript html5 sass"
-    },
-    
-    {
-        "title": "Movie Quote Generator",
-        "description": "A web app that generates random movie quotes",
-        "image": "assets/images/movie-quote-generator.jpg",
-        "link": "https://kamiri-charles.github.io/movie-quote-generator/",
-        "icons": "react javascript html5 sass"
-    },
+	{
+		"title": "Art Alchemy",
+		"description": "An e-commerce platform for artists.",
+		"image": "assets/images/art-alchemy.jpg",
+		"link": "https://kamiri-charles.github.io/art-alchemy/",
+		"icons": "typescript java spring-boot mongodb css3"
+	},
 
-    {
-        "title": "Matrix Rain Effect",
-        "description": "Inspired by the matrix.",
-        "image": "assets/images/matrix-rain-effect.jpg",
-        "link": "https://kamiri-charles.github.io/matrix-rain-effect/",
-        "icons": "react javascript"
-    },
+	{
+		"title": "Heal Together",
+		"description": "A web teletherapy app. Still in development.",
+		"image": "assets/images/heal-together.jpg",
+		"link": "https://kamiri-charles.github.io/heal-together/",
+		"icons": "react javascript html5 sass"
+	},
 
-    {
-        "title": "Martial Hero",
-        "description": "A 2d HTML canvas game. Still in development.",
-        "image": "assets/images/martial-hero.jpg",
-        "link": "https://kamiri-charles.github.io/martial-hero/",
-        "icons": "typescript html5 css3 unity"
-    }
+	{
+		"title": "Movie Quote Generator",
+		"description": "A web app that generates random movie quotes",
+		"image": "assets/images/movie-quote-generator.jpg",
+		"link": "https://kamiri-charles.github.io/movie-quote-generator/",
+		"icons": "react javascript html5 sass"
+	},
+
+	{
+		"title": "Matrix Rain Effect",
+		"description": "Inspired by the matrix.",
+		"image": "assets/images/matrix-rain-effect.jpg",
+		"link": "https://kamiri-charles.github.io/matrix-rain-effect/",
+		"icons": "react javascript"
+	},
+
+	{
+		"title": "Martial Hero",
+		"description": "A 2d HTML canvas game. Still in development.",
+		"image": "assets/images/martial-hero.jpg",
+		"link": "https://kamiri-charles.github.io/martial-hero/",
+		"icons": "typescript html5 css3 unity"
+	}
 ]
