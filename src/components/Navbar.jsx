@@ -38,9 +38,9 @@ const Navbar = () => {
                 </Link>
             
                 {/* Certification */}
-                <Link to='/certification'>
+                {/* <Link to='/certification'>
                     <div className="link">Certification</div>
-                </Link>
+                </Link> */}
             
                 {/* Contact */}
                 <Link to='/contact'>
@@ -54,9 +54,9 @@ const Navbar = () => {
                     <div className="link" onClick={open_menu}>Projects</div>
                 </Link>
             
-                <Link to='/certification'>
+                {/* <Link to='/certification'>
                     <div className="link" onClick={open_menu}>Certification</div>
-                </Link>
+                </Link> */}
             
                 <Link to='/contact'>
                     <div className="link" onClick={open_menu}>Contact</div>
