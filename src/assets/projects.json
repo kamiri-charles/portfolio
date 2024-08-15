@@ -9,10 +9,10 @@
 
 	{
 		"title": "King Hammer",
-		"description": "Step into the royal shoes of King Hammer, a brave and mighty king on a quest to reclaim his castle from the pesky pirate pigs! Smash your way through hordes of enemies, conquer challenging levels, and restore peace to the kingdom using your trusty hammer. Will you reign victorious or let the pigs plunder your legacy? Adventure awaits in this thrilling 2D platformer!",
+		"description": "Step into the royal shoes of King Hammer, a brave and mighty king on a quest to reclaim his castle from the pesky pirate pigs! Adventure awaits in this thrilling 2D platformer!",
 		"image": "assets/images/king-hammer.jpg",
 		"link": "https://kamiri-charles.github.io/king-hammer/",
-		"icons": "typescript jhtml5 css3 unity"
+		"icons": "typescript html5 css3 unity"
 	},
 
 	{
